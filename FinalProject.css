@@ -1,0 +1,120 @@
+/* @media (max-width:900px) {
+  .push{
+    margin-right: 700px;
+  }
+  
+}
+
+.push{
+  margin-left: 700px;
+}  */
+
+.btn-primary:hover{
+    background-color: rgb(0, 132, 255);
+    transition: .5s;
+  }
+  .star:hover{
+    color: yellow;
+  }
+  .sway{
+    margin: 100px 100px 0px 100px;
+  }
+  .form-ar{
+    border-top: 5px solid yellow;
+    
+  }
+  .set{
+    display: flex;
+    justify-content: space-around;
+  }
+  .cake{
+    margin: 25px;
+  }
+  .form-part{
+    width: 25%;
+    border: 5px solid yellow;
+    border-radius: 5px;
+  }
+  .nav-item:hover{
+    border-bottom: 3px solid black;
+    
+  }
+  .navlink>.active{
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+  }
+  .carousel-item{
+      height: 32rem;
+      background: #333;
+      color: #fff;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+  }
+  .container{
+      position: absolute;
+      bottom:0;
+      left: 0;
+      right: 0;
+      padding-bottom: 50px;
+  }
+  .overlayimage{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+  .card{
+      width: 25%;
+      display: inline-block;
+      border: none;
+      margin: 2%;
+      margin-left: 60px;
+     }
+ 
+ .pic img{
+   width: 100%;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+   cursor: pointer;
+  }
+ 
+ .title{
+   text-align: center;
+   padding: 10px;
+  }
+ 
+ h1{
+   font-size: 20px;
+  }
+ 
+ .des{
+   padding: 3px;
+   text-align: center;
+   padding-top: 10px;
+   border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+ }
+ button{
+   /*margin-top: 40px;*/
+   margin-bottom: 10px;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding:10px;
+ }
+ .test-button:hover{
+  background-color: rgb(0, 132, 255);
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+ } 
+ .star{
+   color: grey;
+ }

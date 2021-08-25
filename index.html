@@ -1,0 +1,368 @@
+<!--
+    Documentation about my website
+  My webiste is a food recipe restaurant.
+  It has unique  features such as, like button, carousel slider, navbar and so on.
+  It uses a form to accept optional input and Javascript to validate it.
+  The  name of my website is Natures Cart
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Cart | Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/FinalProject.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-family: 'Style Script', cursive;font-weight: 700;font-size:30px">Nature's Cart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a  class="nav-link active " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="alert('Feature is still in development')" class="nav-link" href="#">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="alert('Feature is still in development')" class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Contact Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://www.instagram.com/ejhirae/" target="_blank"><i class="fab fa-instagram"></i>  Instagram</a></li>
+            <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=2349052072845&text=Hello%2C%20I%27m%20contacting%20you%20from%20your%20website.%20Nice%20to%20meet%20you%20.%20My%20name%20is%20%3A" target="_blank"><i class="fab fa-whatsapp"></i>  Whatsapp</a></li>
+            <li><a class="dropdown-item" href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          </ul>
+        </li>
+        <li class="nav-item push">
+          <a class="nav-link" href="/Html/Sign-in.html">Sign-up <i class="fas fa-sign-out-alt"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <main>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+         
+          <div class="carousel-item active" >
+            <div class="overlayimage"style="background-image: url(https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=805&q=80);"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Summer Drinks are now Available</h5>
+              <p>since we can't give you a beach, how about tasting one...</p>
+              <div class="viw">
+                <button onclick="alert('Feature is still in development')" class="viw btn-primary">View Recipe</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlayimage"style="background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lunch is Served!</h5>
+              <p>smile in the afternoon with our exquisite lunch recipes</p>
+              <div class="viw">
+                <button onclick="alert('Feature is still in development')"  class="viw btn-primary">View Recipe</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlayimage"style="background-image: url(https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>BreakFast</h5>
+              <p>is that pancakes i'm smelling, yum</p>
+              <div class="viw">
+                <button onclick="alert('Feature is still in development')"  class="viw btn-primary">View Recipe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!------------------------------------------------------------------------------------------->
+      <h1 style="font-family: 'Style Script', cursive;font-weight: 700;font-size:30px; padding: 30px;text-align: center;">What's New</h1>
+      <div class="card">
+        <div class="pic">
+           <img style="border-bottom: 5px solid yellow;" class="image" src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+          </div>
+        <div class="title">
+         <h1>HamBurger</h1>
+        </div>
+        <div class="des">
+          
+         <button onclick="alert('Feature is still in development')"  class="test-button">View Recipe</button>
+         <div class="star">
+          <i role="button" id="b6" onclick="do_this6()" class="fas fa-star "></i>
+         </div>
+        </div>
+        </div>
+        <div class="card">
+          <div class="pic">
+             <img style="border-bottom: 5px solid yellow;" class="image" src="/FoodCard/JollofRice.jpg">
+            </div>
+          <div class="title">
+           <h1">Jollof Rice</h1>
+          </div>
+          <div class="des">
+           <button onclick="alert('Feature is still in development')"  class="test-button">View Recipe</button>
+           <div class="star">
+            <i role="button" id="b5" onclick="do_this5()" class="fas fa-star "></i>
+           </div>
+          </div>
+          </div>
+          <div class="card">
+            <div class="pic">
+               <img style="border-bottom: 5px solid yellow;" class="image" src="https://images.unsplash.com/photo-1585109649139-366815a0d713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlbmNoJTIwZnJpZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width="100%">
+              </div>
+            <div class="title">
+             <h1 style="border-top: yellowgreen;">French Fries</h1>
+            </div>
+            <div class="des">
+             <button onclick="alert('Feature is still in development')"  class="test-button">View Recipe</button>
+             <div class="star">
+              <i role="button" id="b4" onclick="do_this4()" class="fas fa-star "></i>
+            </div>
+            </div>
+            </div>
+            <div class="card">
+              <div class="pic">
+                 <img style="border-bottom: 5px solid yellow;" class="image" src="https://images.unsplash.com/photo-1516685018646-549198525c1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBhc3RhJTIwYW5kJTIwbWVhdGJhbGxzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                </div>
+              <div class="title">
+               <h1 style="border-top: yellowgreen;">Pasta</h1>
+              </div>
+              <div class="des">
+               <button onclick="alert('Feature is still in development')"  class="test-button">View Recipe</button>
+               <div class="star">
+                <i role="button" id="b3" onclick="do_this3()" class="fas fa-star "></i>
+               </div>
+              </div>
+              </div>
+              <div class="card">
+                <div class="pic">
+                   <img style="border-bottom: 5px solid yellow;" class="image" src="https://images.unsplash.com/flagged/photo-1557609786-fd36193db6e5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFuY2FrZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                  </div>
+                <div class="title">
+                 <h1 style="border-top: yellowgreen;">Pancakes</h1>
+                </div>
+                <div class="des">
+                  <button onclick="alert('Feature is still in development')" class="test-button">View Recipe</button>
+                  <div class="star">
+                    <i role="button" id="b2" onclick="do_this2()" class="fas fa-star "></i>
+                  </div>
+                 </div>
+                </div>
+                <div class="card">
+                  <div class="pic">
+                     <img style="border-bottom: 5px solid yellow;" class="image" src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                  <div class="title">
+                   <h1>Course Dishes</h1>
+                  </div>
+                  <div class="des">
+                   <button onclick="alert('Feature is still in development')" class="test-button">View Recipe</button>
+                   <div class="star">
+                    <i role="button" id="b1" onclick="do_this()" class="fas fa-star "></i>
+                   </div>
+                  </div>
+                  </div>
+
+
+
+
+                  <!-------------------------NEWSLETTER----------------------------->
+
+
+
+
+
+
+
+              <div class="set">
+                  
+                  <div class="form-part">                    
+                    <div class="cake">
+                      <h1>Subscribe to Our NewsLetter</h1>
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="gen" class="form-label">Gender</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                          </label>
+                          </div>
+                          <div class="form-check">
+                          <label class="form-check-label" for="flexRadioDefault3">
+                            Others
+                          </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                        </div>
+                          <textarea name="" id="flexRadioDefault3" cols="20" rows="5" placeholder="Type a text here"></textarea>
+                        
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I want to recieve emails about promotion</label>
+                      </div>
+                      <button type="submit" id="sub1" class="btn btn-primary" onclick="do_that()">Submit</button>
+                    </form>
+                  </div>
+                  </div>
+                          
+                  <div class="recipe-suggestions form-ar">
+                    <div class="cake">
+                      <h1 >Suggest Something To see On Our Page</h1>
+                    <form>
+                      <div class="mb-3">
+                        <!-- <label for="" class="form-label">What Would You Love to see?</label> -->
+                        <!-- <input type="text" class="form-control" id="suggestion" aria-describedby="emailHelp">
+                        <br> -->
+                        <textarea name="exampleInputEmail1" id="suggestion" cols="30" rows="10"></textarea><br>
+                      <button type="submit" id="btn2" onclick="do_that2()" class="btn btn-primary">Submit</button>
+                    </form></div>
+                  </div>
+                </div>
+</main>
+<footer>
+  <div class="sway">    
+    <div class="footer-logo">
+    <a style="text-decoration: none;" href="#"><h1 style="font-family: 'Style Script', cursive;font-weight: 700;font-size:30px">Natures Cart</h1></a>
+    </div>
+    
+    <p>
+    Copyright ©2021 All rights reserved.
+    </p>
+    </div>
+</footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+<script>
+  var btn_sub = document.getElementById('sub1')
+  function do_that(){
+    alert("Details Recieved, Check email for future updates")
+    window.location.reload();
+  }
+  var btn_sub2 = document.getElementById('sub2')
+  var wep = document.getElementById('suggestion')
+  function do_that2(){
+    if(wep.value ==""|| wep.value == null){
+      alert("Fill The Box before submitting")
+    }else{
+    alert("Thank you for the review")
+    window.location.reload();
+  }
+  }
+  var btn1 = document.getElementById('b1')
+          function do_this(){
+             if(btn1.style.color=="yellow"){
+                btn1.style.color="grey"
+                 alert("removed from liked items")
+              
+             }else{
+                btn1.style.color="yellow"
+               alert("added to liked items")
+             }
+          }
+
+          var btn2 = document.getElementById('b2')
+          function do_this2(){
+             if(btn2.style.color=="yellow"){
+                btn2.style.color="grey"
+                alert("removed from liked items")
+             }else{
+                btn2.style.color="yellow"
+                alert("added to liked items")
+             }
+          }
+
+          var btn3 = document.getElementById('b3')
+          function do_this3(){
+             if(btn3.style.color=="yellow"){
+                btn3.style.color="grey"
+                alert("removed from liked items")
+             }else{
+               btn3.style.color="yellow"
+               alert("added to liked items")
+             }
+          }
+          var btn4 = document.getElementById('b4')
+          function do_this4(){
+             if(btn4.style.color=="yellow"){
+                btn4.style.color="grey"
+                alert("removed from liked items")
+                
+             }else{
+                btn4.style.color="yellow"
+                alert("added to liked items")
+                
+             }
+          }
+          var btn5 = document.getElementById('b5')
+          function do_this5(){
+             if(btn5.style.color=="yellow"){
+                btn5.style.color="grey"
+                alert("removed from liked items")
+                
+             }else{
+                btn5.style.color="yellow"
+                alert("added to liked items")
+             }
+          }
+          var btn6 = document.getElementById('b6')
+          function do_this6(){
+             if(btn6.style.color=="yellow"){
+                btn6.style.color="grey"
+                alert("removed from liked items")
+             }else{
+                btn6.style.color="yellow"
+                alert("added to liked items")
+             }
+          }
+</script>
+
+
+</body>
+</html>

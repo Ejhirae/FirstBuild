@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .val{
+            display: flex;
+            margin-left: 500px;
+            width: 50%;
+        }
+        .sqa{
+            margin-bottom: 50px;
+        }
+    </style>
+ <main>   
+    <h1 style="margin-left: 500px;">Sign-up</h1>  
+    <div class="val">
+    <form name="format" onsubmit="return validateForm(event)">
+        <div class="mb-3">
+          <label for="entEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="entEmail" aria-describedby="emailHelp" placeholder="e.g me@you.com">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="entName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="entName" placeholder="e.g John Apppleseed">
+        </div>
+        <div class="mb-3">
+          <label for="gen" class="form-label">Gender</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Others
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+          </div>
+            <textarea name="" cols="20" rows="5" placeholder="Type a text here"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="entAge" class="form-label">Age</label>
+            <input type="date" class="form-control" id="entAge" onkeyup="getAgeVal(0)" onblur="getAgeVal(0);" required>
+            <br>
+            <label for="txtage">Age</label>
+            <input type="text" name="txtage" id="txtage" autocomplete="off" disabled placeholder="Tap Me To Reveal Your Age">
+          </div>
+        <div class="mb-3">
+            <label for="entPass" class="form-label">Create A Password</label>
+            <input type="password" class="form-control" id="entPass">
+          </div>
+          <div class="mb-3">
+            <label for="entPass2" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="entPass2">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="check" name="chance">
+            <label class="form-check-label" for="exampleCheck1">clicking this means you've agreed to our privacy policy</label>
+          </div>
+          <div class="sqa">
+        <input type="submit" class="btn btn-primary" disabled="disabled" id="done" value="Submit" onclick="getAge()+rel_Me()" >
+    </div>
+      </form>
+    </div>
+</main>
+    <footer>
+        <div class="sway">    
+          <div class="footer-logo">
+          <a style="text-decoration: none;" href="#"><h1 style="font-family: 'Style Script', cursive;font-weight: 700;font-size:30px">Natures Cart</h1></a>
+          </div>
+          
+          <p>
+          Copyright ©2021 All rights reserved.
+          </p>
+          </div>
+      </footer>
+    <script src="/js/formVal.js " async></script>
+    <script type="text/javascript">
+        function rel_Me(){
+            window.location.reload();
+        }
+function formatDate(date){
+var d = new Date(date),
+month = '' + (d.getMonth() + 1),
+day = '' + d.getDate(),
+year = d.getFullYear();
+
+if (month.length < 2) month = '0' + month;
+if (day.length < 2) day = '0' + day;
+
+return [year, month, day].join('-');
+
+}
+
+
+        function getAge(dateString){
+var birthdate = new Date().getTime();
+if (typeof dateString === 'undefined' || dateString === null || (String(dateString) === 'NaN')){
+// variable is undefined or null value
+birthdate = new Date().getTime();
+}
+birthdate = new Date(dateString).getTime();
+var now = new Date().getTime();
+// now find the difference between now and the birthdate
+var n = (now - birthdate)/1000;
+if (n < 4.0997e+8){ // less than a week
+var day_n = Math.floor(n/86400);
+alert("you are too young to own an account")
+if (typeof day_n === 'undefined' || day_n === null || (String(day_n) === 'NaN')){
+// variable is undefined or null
+return '';
+}else{
+return day_n + ' day' + (day_n > 1 ? 's' : '') + ' old';
+}
+} else if (n < 2629743){ // less than a month
+var week_n = Math.floor(n/604800);
+if (typeof week_n === 'undefined' || week_n === null || (String(week_n) === 'NaN')){
+return '';
+}else{
+return week_n + ' week' + (week_n > 1 ? 's' : '') + ' old';
+}
+} else if (n < 31562417){ // less than 24 months
+var month_n = Math.floor(n/2629743);
+if (typeof month_n === 'undefined' || month_n === null || (String(month_n) === 'NaN')){
+return '';
+}else{
+return month_n + ' month' + (month_n > 1 ? 's' : '') + ' old';
+}
+}else{
+var year_n = Math.floor(n/31556926);
+if (typeof year_n === 'undefined' || year_n === null || (String(year_n) === 'NaN')){
+return year_n = '';
+}else{
+return year_n + ' year' + (year_n > 1 ? 's' : '') + ' old';
+}
+}
+}
+
+function getAgeVal(pid){
+var birthdate = formatDate(document.getElementById("entAge").value);
+var count = document.getElementById("entAge").value.length;
+if (count=='10'){
+var age = getAge(birthdate);
+var str = age;
+var res = str.substring(0, 1);
+if (res =='-' || res =='0'){
+document.getElementById("entAge").value = "";
+document.getElementById("txtage").value = "";
+$('#entAge').focus();
+return false;
+}else{
+document.getElementById("txtage").value = age;
+}
+}else{
+document.getElementById("txtage").value = "";
+return false;
+}
+}
+    </script>
+</body>
+</html>
